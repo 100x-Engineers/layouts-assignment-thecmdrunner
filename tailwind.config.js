@@ -40,6 +40,8 @@ module.exports = {
           950: "#0A0A0A",
           1000: "#000000",
         },
+
+        secondary: "#FFFFFF60",
       },
 
       width: {
