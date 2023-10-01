@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100x.com</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="bg-neutral-1000 font-inter">
+    <main class="flex min-h-screen w-full max-w-demo-mobile flex-col justify-between">
+        <section class="flex w-full flex-col items-start gap-3 rounded-2xl px-4 pb-5">
+            <div class="flex items-center gap-5 self-stretch py-3">
+                <a href="index.html">
+                    <img src="../../public/images/cancel.svg" />
+                </a>
+
+                <p class="text-[15px] font-bold leading-regular text-neutral-50">
+                    Step 4 of 4
+                </p>
+            </div>
+
+            <div class="flex flex-col gap-y-2">
+                <h1 class="text-2xl font-bold leading-regular text-neutral-50">
+                    You'll need a password
+                </h1>
+
+                <p class="leading-regular text-neutral-500">
+                    Make sure it's 8 characters or more
+                </p>
+            </div>
+            <div class="mt-7 flex flex-col items-start gap-y-2 self-stretch">
+                <div
+                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
+                    <input
+                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                        type="text" placeholder="Verification code" value="" />
+                    <label
+                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
+                        <p class="text-center">Verification code</p>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <a href="create-account-step-4.html">
+            <button
+                class="flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-50 px-6 py-2 font-bold leading-regular text-neutral-1000 shadow-neutral backdrop-blur-xl hover:bg-neutral-200 focus:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-50">
+                Next
+            </button>
+        </a>
+    </main>
+</body>
+
+</html>
