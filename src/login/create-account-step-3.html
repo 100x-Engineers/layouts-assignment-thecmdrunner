@@ -12,7 +12,7 @@
         rel="stylesheet" />
 </head>
 
-<body class="bg-neutral-1000">
+<body class="bg-neutral-1000 font-inter">
     <main class="flex min-h-screen w-full max-w-demo-mobile flex-col justify-between">
         <section class="flex w-full flex-col items-start gap-3 rounded-2xl px-4 pb-5">
             <div class="flex items-center gap-5 self-stretch py-3">
@@ -21,57 +21,45 @@
                 </a>
 
                 <p class="text-[15px] font-bold leading-regular text-neutral-50">
-                    Step 2 of 4
+                    Step 3 of 4
                 </p>
             </div>
 
-            <h1 class="text-2xl font-bold leading-regular text-neutral-50">
-                Create your account
-            </h1>
-            <div class="mt-5 flex flex-col items-start gap-y-8 self-stretch">
+            <div class="flex flex-col gap-y-2">
+
+                <h1 class="text-2xl font-bold leading-regular text-neutral-50">
+                    We sent you a code
+                </h1>
+
+                <p class="text-neutral-500 leading-regular">
+                    Enter it below to verify janedoe@gmail.com
+                </p>
+
+            </div>
+            <div class="mt-7 flex flex-col items-start gap-y-2 self-stretch">
                 <div
                     class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
                     <input
                         class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="text" placeholder="Name" value="Pranav" />
+                        type="text" placeholder="Verification code" value="" />
                     <label
                         class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Name</p>
+                        <p class="text-center">Verification code</p>
                     </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
                 </div>
 
-                <div
-                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
-                    <input
-                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="email" placeholder="Email" value="pranav@100xengineers.com" />
-                    <label
-                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Email</p>
-                    </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
+                <div class="flex w-full justify-end">
+
+                    <p class="text-sm text-twitter-blue">Didn't receive a code?</p>
                 </div>
 
-                <div
-                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
-                    <input
-                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="text" placeholder="Date of birth" value="1 January 1000" />
-
-                    <label
-                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Date of birth</p>
-                    </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
-                </div>
             </div>
         </section>
 
-        <a href="create-account-step-3.html">
+        <a href="create-account-step-4.html">
             <button
                 class="flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-50 px-6 py-2 font-bold leading-regular text-neutral-1000 shadow-neutral backdrop-blur-xl hover:bg-neutral-200 focus:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-50">
-                Create account
+                Next
             </button>
         </a>
     </main>
