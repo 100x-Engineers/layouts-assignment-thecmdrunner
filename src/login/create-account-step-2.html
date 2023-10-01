@@ -1,85 +1,109 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100x.com</title>
     <link href="../../dist/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-neutral-1000">
-    <main class="flex min-h-screen w-full max-w-demo-mobile flex-col justify-between">
-        <section class="flex w-full flex-col items-start gap-3 rounded-2xl px-4 pb-5">
-            <div class="flex items-center gap-5 self-stretch py-3">
-                <a href="index.html">
-                    <img src="../../public/images/cancel.svg" />
-                </a>
+  <body class="bg-neutral-1000">
+    <main
+      class="flex min-h-screen w-full max-w-demo-mobile flex-col justify-between"
+    >
+      <section
+        class="flex w-full flex-col items-start gap-3 rounded-2xl px-4 pb-5"
+      >
+        <div class="flex items-center gap-5 self-stretch py-3">
+          <a href="index.html">
+            <img src="../../public/images/cancel.svg" />
+          </a>
 
-                <p class="text-[15px] font-bold leading-regular text-neutral-50">
-                    Step 2 of 4
-                </p>
-            </div>
+          <p class="text-[15px] font-bold leading-regular text-neutral-50">
+            Step 2 of 4
+          </p>
+        </div>
 
-            <h1 class="text-2xl font-bold leading-regular text-neutral-50">
-                Create your account
-            </h1>
-            <div class="flex mt-5 flex-col items-start gap-y-8 self-stretch">
+        <h1 class="text-2xl font-bold leading-regular text-neutral-50">
+          Create your account
+        </h1>
+        <div class="mt-5 flex flex-col items-start gap-y-8 self-stretch">
+          <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue"
+          >
+            <input
+              class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              type="text"
+              placeholder="Name"
+              value="Pranav"
+            />
+            <label
+              class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue"
+            >
+              <p class="text-center">Name</p>
+            </label>
+            <img
+              class="opacity-0 peer-focus:opacity-100"
+              src="../../public/images/correct.svg"
+            />
+          </div>
 
-                <div
-                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
-                    <input
-                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="text" placeholder="Name" value="Pranav" />
-                    <label
-                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Name</p>
-                    </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
-                </div>
+          <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue"
+          >
+            <input
+              class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              type="email"
+              placeholder="Email"
+              value="pranav@100xengineers.com"
+            />
+            <label
+              class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue"
+            >
+              <p class="text-center">Email</p>
+            </label>
+            <img
+              class="opacity-0 peer-focus:opacity-100"
+              src="../../public/images/correct.svg"
+            />
+          </div>
 
-                <div
-                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
-                    <input
-                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="email" placeholder="Email" value="pranav@100xengineers.com" />
-                    <label
-                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Email</p>
-                    </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
-                </div>
+          <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue"
+          >
+            <input
+              class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+              type="text"
+              placeholder="Date of birth"
+              value="1 January 1000"
+            />
 
-                <div
-                    class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
-                    <input
-                        class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
-                        type="text" placeholder="Date of birth" value="1 January 1000" />
+            <label
+              class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue"
+            >
+              <p class="text-center">Date of birth</p>
+            </label>
+            <img
+              class="opacity-0 peer-focus:opacity-100"
+              src="../../public/images/correct.svg"
+            />
+          </div>
+        </div>
+      </section>
 
-                    <label
-                        class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
-                        <p class="text-center">Date of birth</p>
-                    </label>
-                    <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
-                </div>
-
-            </div>
-        </section>
-
-        <a href="create-account-step-3.html">
-
-            <button
-                class="bg-twitter-blue text-neutral-50 rounded-full gap-2.5 inline-flex justify-center hover:bg-twitter-blue-hover disabled:bg-twitter-blue-disabled disabled:cursor-not-allowed items-center p-5 text-base font-bold leading-regular grow w-full">
-                Sign up
-            </button>
-
-
-        </a>
+      <a href="create-account-step-3.html">
+        <button
+          class="inline-flex w-full grow items-center justify-center gap-2.5 rounded-full bg-twitter-blue p-5 text-base font-bold leading-regular text-neutral-50 hover:bg-twitter-blue-hover disabled:cursor-not-allowed disabled:bg-twitter-blue-disabled"
+        >
+          Sign up
+        </button>
+      </a>
     </main>
-</body>
-
+  </body>
 </html>
