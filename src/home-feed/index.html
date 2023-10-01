@@ -12,11 +12,13 @@
         rel="stylesheet" />
 </head>
 
-<body class="bg-neutral-1000 font-inter">
-    <header class="flex w-full max-w-demo-mobile items-center justify-start px-3 py-4">
+<body class="max-h-screen bg-neutral-1000 font-inter">
+    <header
+        class="flex h-max w-full max-w-demo-mobile items-center justify-start border-b border-b-neutral-700 px-3 py-4">
         <div class="flex w-2/5 items-center justify-start">
             <a class="" href="../user-profile/index.html">
-                <img src="../../public/images/user-avatar.jpg" alt="Profile Picture" class="sticky w-9 rounded-full" />
+                <img src="https://avatars.githubusercontent.com/u/38887390?v=4" alt="Profile Picture"
+                    class="sticky w-9 rounded-full" />
             </a>
         </div>
 
@@ -24,8 +26,8 @@
             <img src="../../public/images/100X.svg" />
         </div>
     </header>
-    <main class="flex min-h-screen w-full max-w-demo-mobile flex-col items-center">
-        <div class="inline-flex w-full items-center justify-center gap-10 border-b border-neutral-700 px-10 pt-5">
+    <main class="flex overflow-y-hidden max-h-fit grow w-full max-w-demo-mobile flex-col items-center">
+        <div class="flex w-full items-center justify-center gap-10 border-b border-neutral-700 px-10 pt-5">
             <button class="inline-flex w-32 flex-col items-center justify-center gap-4">
                 <div class="flex items-center justify-center border-b-2 border-twitter-blue pb-3">
                     <div class="text-base font-medium text-neutral-400">For you</div>
@@ -38,38 +40,174 @@
             </button>
         </div>
 
-        <section class="flex w-full flex-col gap-10 px-7">
-            <section class="flex flex-col gap-3">
-                <h1 class="text-3xl font-bold leading-regular text-neutral-50">
-                    Happening now
-                </h1>
-                <p class="text-base font-medium leading-regular text-neutral-50">
-                    Join today.
-                </p>
-            </section>
-            <a href="create-account-step-1.html">
-                <button
-                    class="flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-50 px-6 py-2 font-bold leading-regular text-neutral-1000 shadow-neutral backdrop-blur-xl hover:bg-neutral-200 focus:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-50">
-                    Create account
+        <section class="group relative flex h-full w-full flex-col items-center overflow-y-hidden">
+            <div class="box-content flex h-full flex-col overflow-y-scroll [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-transparent group-hover:[&::-webkit-scrollbar-thumb]:bg-neutral-400 [&::-webkit-scrollbar]:w-1"
+                id="scrollable-view">
+                <article id="post" class="flex w-full gap-4 border-b border-b-neutral-700 px-4 py-2">
+                    <img src="https://avatars.githubusercontent.com/u/38887390?v=4" alt="profile pic"
+                        class="aspect-square h-12 w-12 rounded-full" />
+                    <div class="flex flex-col gap-y-1 text-neutral-50">
+                        <div class="flex items-center gap-2">
+                            <p class="text-base font-medium leading-regular">Pranav ⚡</p>
+                            <p class="text-neutral-500">@thecmdrunner • 10h</p>
+                        </div>
+
+                        <p class="font-normal leading-regular">
+                            Writing gets easier after the first sentence.
+
+                            <br />
+                            <br />
+
+
+                            Their attention shifts from internal to external, and the
+                            difficulty they created in their mind vanishes.
+                        </p>
+
+                        <div class="flex items-center justify-between self-stretch py-3 text-neutral-500">
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/comment-sv.svg" /> 11
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/retweet-sv.svg" /> 270
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/heart-sv.svg" /> 1,869
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/reach-sv.svg" /> 99.6K
+                            </button>
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/share-sv.svg" />
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article id="post" class="flex w-full gap-4 border-b border-b-neutral-700 px-4 py-2">
+                    <img src="https://avatars.githubusercontent.com/u/38887390?v=4" alt="profile pic"
+                        class="aspect-square h-12 w-12 rounded-full" />
+                    <div class="flex flex-col gap-y-1 text-neutral-50">
+                        <div class="flex items-center gap-2">
+                            <p class="text-base font-medium leading-regular">Pranav ⚡</p>
+                            <p class="text-neutral-500">@thecmdrunner • 10h</p>
+                        </div>
+
+                        <p class="font-normal leading-regular">
+                            Typescript is better than Javascript.
+
+                            <br />
+                            <br />
+
+                            Tailwind is faster and safer than using vanilla CSS.
+                        </p>
+
+                        <div class="flex items-center justify-between self-stretch py-3 text-neutral-500">
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/comment-sv.svg" /> 11
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/retweet-sv.svg" /> 270
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/heart-sv.svg" /> 1,869
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/reach-sv.svg" /> 99.6K
+                            </button>
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/share-sv.svg" />
+                            </button>
+                        </div>
+                    </div>
+                </article>
+                <article id="post" class="flex w-full gap-4 border-b border-b-neutral-700 px-4 py-2">
+                    <img src="https://avatars.githubusercontent.com/u/38887390?v=4" alt="profile pic"
+                        class="aspect-square h-12 w-12 rounded-full" />
+                    <div class="flex flex-col gap-y-1 text-neutral-50">
+                        <div class="flex items-center gap-2">
+                            <p class="text-base font-medium leading-regular">Pranav ⚡</p>
+                            <p class="text-neutral-500">@thecmdrunner • 10h</p>
+                        </div>
+
+                        <p class="font-normal leading-regular">
+                            Serverless is better than Servers.
+                        </p>
+
+                        <div class="flex items-center justify-between self-stretch py-3 text-neutral-500">
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/comment-sv.svg" /> 11
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/retweet-sv.svg" /> 270
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/heart-sv.svg" /> 1,869
+                            </button>
+
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/reach-sv.svg" /> 99.6K
+                            </button>
+                            <button class="flex items-center justify-center gap-[5px]">
+                                <img src="../../public/images/share-sv.svg" />
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+    <footer
+        class="max-h-max border-t border-t-neutral-800 text-neutral-50 px-6 flex items-center justify-center py-[18px] gap-x-10 bottom-0 absolute bg-neutral-1000 w-full max-w-demo-mobile">
+
+        <button class="group aspect-square w-6 h-6 flex z-50 relative items-center justify-center">
+            <img class="absolute w-6 h-6 top-0 left-0 group-focus-within:opacity-100 opacity-0"
+                src="../../public/images/home-active.svg" />
+            <img class="absolute w-6 h-6 top-0 left-0 group-focus-within:opacity-0 opacity-100"
+                src="../../public/images/home-inactive.svg" />
+        </button>
+
+        <a href="../user-profile/index.html">
+
+            <button class="group aspect-square w-6 h-6 flex z-50 relative items-center justify-center">
+                <img class="absolute w-6 h-6 top-0 left-0 group-focus-within:opacity-100 opacity-0"
+                    src="../../public/images/profile-active.svg" />
+                <img class="absolute w-6 h-6 top-0 left-0 group-focus-within:opacity-0 opacity-100"
+                    src="../../public/images/profile-inactive.svg" />
+            </button>
+        </a>
+        <!-- <div class="group w-max h-max">
+            
+                <button class="group-hover:hidden">
+                    <img />
+                </button>
+                <button class="hidden group-hover:block">
+                    <img />
                 </button>
             </a>
-            <div class="flex items-center">
-                <hr class="mr-2 w-full border-t-2 border-neutral-700" />
-                <span class="leading-regular text-neutral-50">or</span>
-                <hr class="ml-2 w-full border-t-2 border-neutral-700" />
-            </div>
-            <section class="flex flex-col gap-5">
-                <p class="font-medium leading-regular text-neutral-50">
-                    Already have an account?
-                </p>
+        </div> -->
 
-                <button
-                    class="flex items-center justify-center gap-2.5 rounded-full border border-button-stroke px-6 py-2 font-bold leading-regular text-twitter-blue shadow-neutral backdrop-blur-xl">
-                    Sign In
-                </button>
-            </section>
-        </section>
-    </main>
+        <div
+            class="absolute left-1/2 -translate-x-1/2 bottom-20 flex items-center justify-center gap-2.5 rounded-full bg-searchbar-fill px-8 py-3">
+            <p class="text-[15px] whitespace-nowrap font-normal leading-regular text-neutral-50">
+                Copied to clipboard.
+            </p>
+        </div>
+        <a class="absolute bottom-20 right-4" href="../compose-tweet/index.html">
+            <button
+                class="shadow-3xl flex aspect-square items-center justify-center rounded-full bg-twitter-blue p-4 shadow-neutral">
+                <img class="" src="../../public/images/plus-icon.svg" />
+            </button>
+        </a>
+    </footer>
 </body>
 
 </html>
