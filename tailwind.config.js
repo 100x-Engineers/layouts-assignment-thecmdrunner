@@ -57,6 +57,10 @@ module.exports = {
         "post-xl": "598px",
       },
 
+      maxWidth: {
+        "demo-mobile": "390px",
+      },
+
       lineHeight: {
         // Naming things is very hard...
         regular: "normal",
