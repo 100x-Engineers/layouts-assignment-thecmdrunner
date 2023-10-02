@@ -1,42 +1,61 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100x.com</title>
     <link href="../../dist/output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="bg-neutral-1000 font-inter">
-    <header class="flex h-max w-full max-w-demo-mobile items-center justify-between px-3 py-4">
-        <a class="" href="../home-feed/index.html">
-            <img src="../../public/images/cancel.svg" alt="Profile Picture" class="h-6 w-6 rounded-full" />
-        </a>
+  <body class="bg-neutral-1000 font-inter">
+    <header
+      class="flex h-max w-full max-w-demo-mobile items-center justify-between px-3 py-4"
+    >
+      <a class="" href="../home-feed/index.html">
+        <img
+          src="../../public/images/cancel.svg"
+          alt="Profile Picture"
+          class="h-6 w-6 rounded-full"
+        />
+      </a>
 
-        <button
-            class="inline-flex w-max items-center justify-center gap-2.5 rounded-full bg-twitter-blue px-6 py-2 text-sm font-bold leading-regular text-neutral-50 hover:bg-twitter-blue-hover disabled:cursor-not-allowed disabled:bg-twitter-blue-disabled">
-            Post
-        </button>
+      <button
+        class="inline-flex w-max items-center justify-center gap-2.5 rounded-full bg-twitter-blue px-6 py-2 text-sm font-bold leading-regular text-neutral-50 hover:bg-twitter-blue-hover disabled:cursor-not-allowed disabled:bg-twitter-blue-disabled"
+      >
+        Post
+      </button>
     </header>
-    <main class="flex min-h-full w-full max-w-demo-mobile grow flex-col items-center overflow-y-hidden">
-        <div class="flex h-full w-full grow items-start justify-start gap-x-3 px-4 py-2">
-            <img src="https://avatars.githubusercontent.com/u/38887390?v=4" alt="Profile Picture"
-                class="h-9 w-9 rounded-full" />
+    <main
+      class="flex min-h-full w-full max-w-demo-mobile grow flex-col items-center overflow-y-hidden"
+    >
+      <div
+        class="flex h-full w-full grow items-start justify-start gap-x-3 px-4 py-2"
+      >
+        <img
+          src="https://avatars.githubusercontent.com/u/38887390?v=4"
+          alt="Profile Picture"
+          class="h-9 w-9 rounded-full"
+        />
 
-            <textarea cols="30" rows="10" placeholder="What's happening?!"
-                class="min-h-[83vh] w-full grow resize-none appearance-none bg-transparent text-base leading-normal text-neutral-50 placeholder:text-neutral-600 focus:outline-none [&::-webkit-scrollbar]:w-0"></textarea>
-        </div>
+        <textarea
+          cols="30"
+          rows="10"
+          placeholder="What's happening?!"
+          class="min-h-[83vh] w-full grow resize-none appearance-none bg-transparent text-base leading-regular text-neutral-50 placeholder:text-neutral-600 focus:outline-none [&::-webkit-scrollbar]:w-0"
+        ></textarea>
+      </div>
     </main>
 
     <footer
-        class="fixed bottom-0 flex max-w-demo-mobile w-full items-center justify-start gap-x-5 border-t border-t-neutral-800 px-4 py-2">
-        <p class="text-sm text-neutral-500">0/280</p>
+      class="fixed bottom-0 flex w-full max-w-demo-mobile items-center justify-start gap-x-5 border-t border-t-neutral-800 px-4 py-2"
+    >
+      <p class="text-sm text-neutral-500">0/280</p>
     </footer>
-</body>
-
+  </body>
 </html>

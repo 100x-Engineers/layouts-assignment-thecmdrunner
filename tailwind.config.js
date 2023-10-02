@@ -63,6 +63,10 @@ module.exports = {
         "demo-mobile": "390px",
       },
 
+      height: {
+        "demo-mobile": "390px",
+      },
+
       lineHeight: {
         // Naming things is very hard...
         regular: "normal",
