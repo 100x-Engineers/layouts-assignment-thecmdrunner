@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100x.com</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="max-h-screen max-w-demo-mobile bg-neutral-1000 font-inter">
+    <header class="mx-auto flex px-4 max-w-demo-mobile flex-col items-start gap-3">
+        <section class="flex items-center justify-between self-stretch py-3">
+            <div class="flex items-center gap-5">
+                <a href="./"><img src="../../public/images/back.svg" /></a>
+                <p class="text-base font-bold leading-regular text-neutral-50">
+                    Edit profile
+                </p>
+            </div>
+            <a href="./">
+                <button
+                    class="md:w-13.8rem md:rounded-6xl flex items-center justify-center rounded-full bg-neutral-50 px-5 py-2 text-center text-sm font-bold leading-regular text-neutral-1000 shadow-neutral backdrop-blur-xl hover:bg-neutral-200">
+                    Save
+                </button>
+            </a>
+        </section>
+
+        <div class="relative flex w-full">
+            <img class="h-52 w-full" src="../../public/images/profile-banner.png" alt="Banner" />
+            <div class="absolute flex h-full w-full items-center justify-center gap-2">
+                <button class="aspect-square rounded-full bg-neutral-1000 bg-opacity-60 p-1">
+                    <img class="h-6 w-6" src="../../public/images/add-photo.svg" />
+                </button>
+                <button class="aspect-square rounded-full bg-neutral-1000 bg-opacity-60 p-1">
+                    <img class="h-6 w-6" src="../../public/images/remove-photo.svg" />
+                </button>
+            </div>
+        </div>
+        <button class="aspect-square top-56 left-9 absolute rounded-full bg-neutral-1000 bg-opacity-60 p-1">
+            <img class="aspect-square h-20 w-20 rounded-full border-4 border-neutral-1000"
+                src="https://avatars.githubusercontent.com/u/38887390?v=4" />
+            <!-- <img class="relative  h-6 w-6" src="../../public/images/add-photo.svg" /> -->
+        </button>
+
+
+    </header>
+
+    <main class="flex max-w-demo-mobile mt-10 gap-y-5 px-4 max-h-fit w-full grow flex-col items-center">
+
+
+
+        <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
+            <input class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                type="text" placeholder="Name" value="Pranav" />
+            <label
+                class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
+                <p class="text-center">Name</p>
+            </label>
+            <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
+        </div>
+
+        <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
+            <textarea
+                class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 appearance-none focus:outline-none"
+                placeholder="Bio" value="Nice bio"></textarea>
+            <label
+                class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
+                <p class="text-center">Bio</p>
+            </label>
+            <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
+        </div>
+
+        <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
+            <input class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                type="text" placeholder="Location" value="Maharashtra" />
+            <label
+                class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
+                <p class="text-center">Location</p>
+            </label>
+            <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
+        </div>
+
+        <div
+            class="relative flex items-center justify-between self-stretch rounded border border-neutral-500 px-3 py-4 focus-within:border-twitter-blue">
+            <input class="peer grow bg-transparent text-neutral-50 placeholder:text-neutral-500 focus:outline-none"
+                type="text" placeholder="Website" value="https://pranava.dev" />
+            <label
+                class="pointer-events-none absolute -top-2 left-4 bg-desk-dark px-1 text-xs font-medium leading-regular text-neutral-500 peer-focus:text-twitter-blue">
+                <p class="text-center">Website</p>
+            </label>
+            <img class="opacity-0 peer-focus:opacity-100" src="../../public/images/correct.svg" />
+        </div>
+        </div>
+    </main>
+</body>
+
+</html>

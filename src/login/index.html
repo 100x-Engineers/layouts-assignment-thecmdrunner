@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100x.com</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-neutral-1000 font-inter">
+    <header
+      class="fixed flex w-full max-w-demo-mobile items-center justify-center px-3 py-4"
+    >
+      <img src="../../public/images/100X.svg" />
+    </header>
+    <main class="flex min-h-screen w-full max-w-demo-mobile items-center">
+      <section class="flex w-full flex-col gap-10 px-7">
+        <section class="flex flex-col gap-3">
+          <h1 class="text-3xl font-bold leading-regular text-neutral-50">
+            Happening now
+          </h1>
+          <p class="text-base font-medium leading-regular text-neutral-50">
+            Join today.
+          </p>
+        </section>
+        <a href="create-account-step-1.html">
+          <button
+            class="flex w-full items-center justify-center gap-2.5 rounded-full bg-neutral-50 px-6 py-2 font-bold leading-regular text-neutral-1000 shadow-neutral backdrop-blur-xl hover:bg-neutral-200 focus:bg-neutral-200 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-neutral-50"
+          >
+            Create account
+          </button>
+        </a>
+        <div class="flex items-center">
+          <hr class="mr-2 w-full border-t-2 border-neutral-700" />
+          <span class="leading-regular text-neutral-50">or</span>
+          <hr class="ml-2 w-full border-t-2 border-neutral-700" />
+        </div>
+        <section class="flex flex-col gap-5">
+          <p class="font-medium leading-regular text-neutral-50">
+            Already have an account?
+          </p>
+
+          <button
+            class="flex items-center justify-center gap-2.5 rounded-full border border-button-stroke px-6 py-2 font-bold leading-regular text-twitter-blue shadow-neutral backdrop-blur-xl"
+          >
+            Sign In
+          </button>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
